@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portal RPL SMKN 9 Medan</title>
+
+<!-- MENGHUBUNGKAN FILE CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo-area">
+
+            <img src="logo-smkn9.png" alt="Logo SMKN 9 Medan">
+
+            <img src="rpl.png" alt="Logo Jurusan RPL">
+
+            <div class="logo">
+                RPL SMKN 9 MEDAN
+            </div>
+
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#">Beranda</a>
+            <a href="#kurikulum">Kurikulum</a>
+            <a href="#karya">Karya Siswa</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <button class="hamburger-btn"
+                id="menuBtn"
+                aria-label="Menu"
+                aria-expanded="false">
+            &#9776;
+        </button>
+
+    </header>
+
+
+    <!-- SIDEBAR KIRI -->
+    <aside class="sidebar-kiri">
+
+        <h3>Menu Cepat</h3>
+
+        <ul>
+            <li>Jadwal Praktikum</li>
+            <li>Modul Pemrograman Web</li>
+            <li>Daftar Lab RPL/11</li>
+            <li>Info PKL & LSP</li>
+        </ul>
+
+    </aside>
+
+
+    <!-- KONTEN UTAMA -->
+    <main class="konten-utama" id="karya">
+
+        <h2>Berita & Proyek Terbaru Kelas XII RPL</h2>
+
+        <p>
+            Selamat datang di Portal Jurusan Rekayasa
+            Perangkat Lunak SMKN 9 Medan.
+            Berikut beberapa proyek kreatif siswa RPL.
+        </p>
+
+        <div class="card-grid">
+
+            <!-- KARTU 1 -->
+            <article class="card">
+
+                <img src="scanqr.jpg"
+                     alt="Sistem Absensi Digital">
+
+                <h4>Sistem Absensi Digital</h4>
+
+                <p>
+                    Aplikasi absensi siswa menggunakan QR Code
+                    untuk mencatat kehadiran secara otomatis.
+                </p>
+
+            </article>
+
+
+            <!-- KARTU 2 -->
+            <article class="card">
+
+                <img src="apkperpustakaan.jpg"
+                     alt="Perpustakaan Digital">
+
+                <h4>Perpustakaan Digital</h4>
+
+                <p>
+                    Website untuk mencari buku, melihat koleksi,
+                    dan mengelola peminjaman buku secara online.
+                </p>
+
+            </article>
+
+
+            <!-- KARTU 3 -->
+            <article class="card">
+
+                <img src="websklh.jpg"
+                     alt="Website Profil Sekolah">
+
+                <h4>Website Profil Sekolah</h4>
+
+                <p>
+                    Media informasi sekolah yang menampilkan
+                    profil, fasilitas, kegiatan, dan informasi pendidikan.
+                </p>
+
+            </article>
+
+
+            <!-- TANTANGAN 1: TAMBAHAN 3 KARTU -->
+
+            <!-- KARTU 4 -->
+            <article class="card">
+
+                <img src="apkkasir.jpg"
+                     alt="Aplikasi Kasir">
+
+                <h4>Aplikasi Kasir</h4>
+
+                <p>
+                    Aplikasi untuk mencatat transaksi,
+                    menghitung total belanja,
+                    dan membuat laporan penjualan.
+                </p>
+
+            </article>
+
+
+            <!-- KARTU 5 -->
+            <article class="card">
+
+                <img src="pengaduan.jpg"
+                     alt="Sistem Pengaduan Online">
+
+                <h4>Sistem Pengaduan Online</h4>
+
+                <p>
+                    Website untuk menyampaikan keluhan
+                    dan memantau status laporan secara digital.
+                </p>
+
+            </article>
+
+
+            <!-- KARTU 6 -->
+            <article class="card">
+
+                <img src="game.jpg"
+                     alt="Game Edukasi">
+
+                <h4>Game Edukasi</h4>
+
+                <p>
+                    Permainan interaktif berbasis komputer
+                    untuk membantu siswa belajar
+                    dengan cara yang menyenangkan.
+                </p>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <!-- WIDGET PROMO -->
+    <aside class="widget-promo">
+
+        <h3>Info & Promo Lab</h3>
+
+        <div class="promo-box">
+
+            <strong>Uji Kompetensi LSP</strong>
+
+            <p>
+                Persiapkan portofolio web responsif kalian
+                sebelum jadwal asesmen.
+            </p>
+
+        </div>
+
+        <div class="promo-box">
+
+            <strong>Belajar Pemrograman</strong>
+
+            <p>
+                Tingkatkan kemampuan coding dan
+                buat proyek kreatif bersama teman.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- FOOTER -->
+    <footer class="footer" id="kontak">
+
+        <p>
+            &copy; 2026 Jurusan RPL SMK Negeri 9 Medan
+        </p>
+
+        <p>
+            Modul Pemrograman Web Lanjut
+        </p>
+
+    </footer>
+
+</div>
+
+
+<!-- CHATBOT -->
+<div class="chat-window" id="chatWindow">
+
+    <div class="chat-header">
+
+        <span>Asisten Virtual SMKN 9 Medan</span>
+
+        <button class="close-chat"
+                onclick="tutupChat()">
+            &times;
+        </button>
+
+    </div>
+
+
+    <!-- ISI CHAT -->
+    <div class="chat-body" id="chatBody">
+
+        <div class="message bot-message">
+            Halo! Ada yang ingin ditanyakan seputar
+            SMKN 9 Medan & Jurusan RPL?
+
+            Pilih pertanyaan di bawah atau ketik langsung:
+        </div>
+
+    </div>
+
+
+    <!-- PERTANYAAN OTOMATIS -->
+    <div class="quick-questions" id="quickQuestions">
+
+        <button onclick="kirimPertanyaan('Dimana lokasi SMKN 9 Medan?')">
+            1. Dimana lokasi SMKN 9 Medan?
+        </button>
+
+        <button onclick="kirimPertanyaan('Apa saja jurusan di SMKN 9 Medan?')">
+            2. Apa saja jurusan di SMKN 9 Medan?
+        </button>
+
+        <button onclick="kirimPertanyaan('Apa yang dipelajari di RPL?')">
+            3. Apa yang dipelajari di RPL?
+        </button>
+
+        <button onclick="kirimPertanyaan('Siapa saja nama guru SMKN 9 Medan?')">
+            4. Siapa saja nama guru SMKN 9 Medan?
+        </button>
+
+    </div>
+
+
+    <!-- INPUT PESAN -->
+    <div class="chat-input-area">
+
+        <input type="text"
+               id="userInput"
+               placeholder="Ketik pertanyaan..."
+               onkeydown="if(event.key === 'Enter') kirimPesan()">
+
+        <button onclick="kirimPesan()">
+            Kirim
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- TOMBOL CHAT -->
+<button class="chat-toggle"
+        id="chatToggle"
+        onclick="bukaChat()">
+
+    💬 Tanya RPL
+
+</button>
+
+
+<!-- JAVASCRIPT MENU -->
+<script>
+
+/* MENU HAMBURGER */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function() {
+
+    navLinks.classList.toggle("active");
+
+    const terbuka = navLinks.classList.contains("active");
+
+    menuBtn.setAttribute("aria-expanded", terbuka);
+
+});
+
+
+/* MEMBUKA CHATBOT */
+
+const chatWindow = document.getElementById("chatWindow");
+const chatBody = document.getElementById("chatBody");
+const userInput = document.getElementById("userInput");
+
+function bukaChat() {
+
+    chatWindow.classList.add("active");
+
+    document.getElementById("chatToggle").style.display = "none";
+
+    userInput.focus();
+
+}
+
+
+/* MENUTUP CHATBOT */
+
+function tutupChat() {
+
+    chatWindow.classList.remove("active");
+
+    document.getElementById("chatToggle").style.display = "block";
+
+}
+
+
+/* MENAMBAHKAN PESAN */
+
+function tambahPesan(teks, jenis) {
+
+    const pesan = document.createElement("div");
+
+    pesan.classList.add("message", jenis);
+
+    pesan.textContent = teks;
+
+    chatBody.appendChild(pesan);
+
+    chatBody.scrollTop = chatBody.scrollHeight;
+
+}
+
+
+/* MENGIRIM PESAN */
+
+function kirimPesan() {
+
+    const pertanyaan = userInput.value.trim();
+
+    if (pertanyaan === "") {
+        return;
+    }
+
+    tambahPesan(pertanyaan, "user-message");
+
+    userInput.value = "";
+
+    const jawaban = cariJawaban(pertanyaan);
+
+    setTimeout(function() {
+
+        tambahPesan(jawaban, "bot-message");
+
+    }, 400);
+
+}
+
+
+/* PERTANYAAN OTOMATIS */
+
+function kirimPertanyaan(teks) {
+
+    userInput.value = teks;
+
+    kirimPesan();
+
+}
+
+
+/* DATABASE JAWABAN CHATBOT */
+
+function cariJawaban(pertanyaan) {
+
+    const tanya = pertanyaan.toLowerCase();
+
+
+    /* SALAM */
+    if (
+        tanya.includes("halo") ||
+        tanya.includes("hai") ||
+        tanya.includes("assalamualaikum")
+    ) {
+
+        return "Halo! Selamat datang di Portal RPL SMKN 9 Medan. Ada yang bisa saya bantu?";
+
+    }
+
+
+    /* LOKASI */
+    if (
+        tanya.includes("lokasi") ||
+        tanya.includes("alamat") ||
+        tanya.includes("dimana")
+    ) {
+
+        return "SMKN 9 Medan merupakan sekolah menengah kejuruan yang berada di Kota Medan, Sumatera Utara.SMK Negeri 9 Medan berlokasi di Jl. Patriot No. 20 A, Kelurahan Lalang, Kecamatan Medan Sunggal, Kota Medan, Sumatera Utara 20123.";
+
+    }
+
+
+
+/* DAFTAR JURUSAN SMKN 9 MEDAN */
+
+if (
+    tanya.includes("jurusan") ||
+    tanya.includes("program keahlian")
+) {
+
+    return "SMK Negeri 9 Medan memiliki 6 program keahlian/jurusan, yaitu:\n\n" +
+           "1. Rekayasa Perangkat Lunak (RPL)\n" +
+           "2. Teknik Komputer dan Jaringan (TKJ)\n" +
+           "3. Desain Komunikasi Visual (DKV)\n" +
+           "4. Animasi\n" +
+           "5. Produksi dan Siaran Program Televisi (PSPT)\n" +
+           "6. Pekerja Sosial";
+
+}
+
+
+    /* PEMBELAJARAN RPL */
+    if (
+        tanya.includes("dipelajari") ||
+        tanya.includes("belajar") ||
+        tanya.includes("rpl")
+    ) {
+
+        return "Di jurusan Rekayasa Perangkat Lunak (RPL), siswa mempelajari:\n\n1. Pemrograman dasar.\n2. HTML dan CSS.\n3. JavaScript.\n4. Pembuatan website.\n5. Database MySQL.\n6. Pengembangan aplikasi.\n\nSiswa juga belajar membuat proyek perangkat lunak.";
+
+    }
+
+
+
+/* DAFTAR NAMA GURU */
+
+if (
+    tanya.includes("guru") ||
+    tanya.includes("nama guru")
+) {
+
+    return "Berikut adalah nama-nama guru SMKN 9 Medan:\n\n" +
+           "1. Pak Ardiansyah\n" +
+           "2. Bu Gira\n" +
+           "3. Bu Shenty\n" +
+           "4. Pak Novelman\n" +
+           "5. Pak Kharisma\n" +
+           "6. Bu Eva\n" +
+           "7. Bu Efy\n" +
+           "8. Pak Roy\n" +
+           "9. Pak Arif\n" +
+           "10. Bu Tamba";
+
+}
+
+
+
+    /* KEGIATAN */
+    if (
+        tanya.includes("kegiatan") ||
+        tanya.includes("praktikum")
+    ) {
+
+        return "Kegiatan pembelajaran RPL meliputi praktikum komputer, pembuatan website, pemrograman, pengelolaan database, dan pengerjaan proyek aplikasi.";
+
+    }
+
+
+    /* PKL */
+    if (
+        tanya.includes("pkl") ||
+        tanya.includes("magang")
+    ) {
+
+        return "PKL atau Praktik Kerja Lapangan merupakan kegiatan siswa untuk memperoleh pengalaman kerja secara langsung di dunia industri sesuai bidang keahliannya.";
+
+    }
+
+
+    /* HTML */
+    if (tanya.includes("html")) {
+
+        return "HTML adalah bahasa markup yang digunakan untuk membuat struktur halaman website.";
+
+    }
+
+
+    /* CSS */
+    if (tanya.includes("css")) {
+
+        return "CSS digunakan untuk mengatur tampilan website, seperti warna, ukuran tulisan, jarak, layout, dan desain responsif.";
+
+    }
+
+
+    /* DATABASE */
+    if (
+        tanya.includes("database") ||
+        tanya.includes("mysql")
+    ) {
+
+        return "Database merupakan tempat penyimpanan dan pengelolaan data. Salah satu contohnya adalah MySQL.";
+
+    }
+
+
+    /* TERIMA KASIH */
+    if (
+        tanya.includes("terima kasih") ||
+        tanya.includes("makasih")
+    ) {
+
+        return "Sama-sama! Terima kasih sudah mengunjungi Portal RPL SMKN 9 Medan. Semoga informasi ini bermanfaat!";
+
+    }
+
+
+    /* JAWABAN DEFAULT */
+    return "Maaf, saya belum memiliki informasi mengenai pertanyaan tersebut. Silakan tanyakan tentang SMKN 9 Medan, jurusan RPL, pembelajaran, HTML, CSS, database, atau kegiatan sekolah.";
+
+}
+
+</script>
+
+</body>
+</html>
